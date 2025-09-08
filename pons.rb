@@ -1,20 +1,20 @@
 class Pons < Formula
   desc "A robust CLI tool used to organize and automate complex workflows with templated commands"
   homepage "https://github.com/tesh254/pons"
-  version "1.0.4"
+  version "1.0.5"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/tesh254/pons/releases/download/v1.0.4/pons-darwin-amd64"
-      sha256 "8b124f3fb134289bd5453170c4ab1e3afe2e40e2861c26d920b116a445120fb7"
+      url "https://github.com/tesh254/pons/releases/download/v1.0.5/pons-darwin-amd64"
+      sha256 "56cd1794a23d04f0c7933db57ee6ad83cfdafc6ddc644d66e627fa7f9a75d273"
     else
-      url "https://github.com/tesh254/pons/releases/download/v1.0.4/pons-darwin-arm64"
-      sha256 "f46aab0bb66a18081bf696924e5d3f29caadda4212ed974eebdcb620e83df68f"
+      url "https://github.com/tesh254/pons/releases/download/v1.0.5/pons-darwin-arm64"
+      sha256 "625a9c2c57f1870b3d4163879ed2d2238e1fd4f031b50e3402db7ac8b1b75cd8"
     end
   end
 
   def install
-    bin.install Dir["pons-*"][0] => "pons"
+    bin.install Dir["pons-"][0] => "pons"
     # Create the mgr alias
     bin.install_symlink "pons" => "pn"
   end
