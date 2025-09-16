@@ -1,15 +1,15 @@
 class Pons < Formula
   desc "A robust CLI tool used to organize and automate complex workflows with templated commands"
   homepage "https://github.com/tesh254/pons"
-  version "1.0.11"
+  version "1.0.12"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/tesh254/pons/releases/download/v1.0.11/pons-darwin-amd64"
-      sha256 "79bcafe0c66d010ab630504e19f386274b28668644e4ecb657c6349ef6166eae"
+      url "https://github.com/tesh254/pons/releases/download/v1.0.12/pons-darwin-amd64"
+      sha256 "8725dea1120679de39b068f34e2b3290a3b606969919cbb0dd72a7d107cc8f5e"
     else
-      url "https://github.com/tesh254/pons/releases/download/v1.0.11/pons-darwin-arm64"
-      sha256 "5a425a13875e8bd402c872397b137ae5debac6cde6c8d096d320bf31d0a14148"
+      url "https://github.com/tesh254/pons/releases/download/v1.0.12/pons-darwin-arm64"
+      sha256 "6db2d94f74d889c0e1d0fb5cd9a280639ae9cb683758c0df840b5217208e9524"
     end
   end
 
